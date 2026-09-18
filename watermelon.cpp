@@ -11,6 +11,6 @@ int main() {
          cout << "YES" << endl;
    }
    else
-      cout << "NO" << endl;
+      cout << "NO" << endl; //could this be done another way?
     return 0;
 }
