@@ -1,3 +1,4 @@
+//simple way
 #include <iostream>
 #include <string>
 using namespace std;
@@ -23,4 +24,29 @@ int main() {
    return 0;
 }
 
-//can we do this using hash-mapping?
+/*
+//using map to keep count
+
+#include <iostream>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+int main() {
+   int n;
+   string s;
+   cin >> n;
+   cin >> s;
+   unordered_map<char, int> count = {{'A', 0}, {'D', 0}};
+   for(int i=0; i<(int)s.length(); i++)
+      count[s[i]]++;
+   if(count['A']>count['D'])
+      cout << "Anton";
+   else if(count['A']<count['D'])
+      cout << "Danik";
+   else
+      cout << "Friendship";
+   
+   return 0;
+}
+*/
