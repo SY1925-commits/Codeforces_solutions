@@ -1,5 +1,5 @@
 #include <iostream>
-#include <unordered_map>
+#include <unordered_set>
 using namespace std;
 
 int main() {
@@ -11,11 +11,11 @@ int main() {
    cin >> nOy;
    for(int i=0; i<nOy; i++)
       cin >> y[i];
-   unordered_map<int, int> num;
+   unordered_set<int> num;
    for(int i=0; i<nOx; i++)
-      num[x[i]]++;
+      num.insert(x[i]);
    for(int i=0; i<nOy; i++)
-      num[y[i]]++;
+      num.insert(y[i]);
    /* for(auto i : num)
        nm++; */
    nm = (int)num.size();
