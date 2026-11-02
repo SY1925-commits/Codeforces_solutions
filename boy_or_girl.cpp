@@ -1,16 +1,16 @@
 #include <iostream>
 #include <string>
-#include <unordered_map>
+#include <unordered_set>
 using namespace std;
 
 int main() {
    string s;
    cin >> s;
-   unordered_map<char, int> count;
-   for(int i=0; i<(int)s.length(); i++)
-      count[s[i]]++;
+   unordered_set<char> distinct;
+   for(char c : s)
+      distinct.insert(c);
    
-   if(count.size()%2 != 0)
+   if(distinct.size()%2 != 0)
       cout << "IGNORE HIM!";
    else
       cout << "CHAT WITH HER!";
