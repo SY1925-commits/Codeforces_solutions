@@ -16,8 +16,9 @@ int main() {
       num[x[i]]++;
    for(int i=0; i<nOy; i++)
       num[y[i]]++;
-   for(auto i : num)
-      nm++;
+   /* for(auto i : num)
+       nm++; */
+   nm = (int)num.size();
    if(nm<n)
       cout << "Oh, my keyboard!";
    else if(nm==n)
