@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-   int n, nOx, nOy, x[100], y[100], nm, possible=1;
+   int n, nOx, nOy, x[100], y[100], nm;
    cin >> n;
    cin >> nOx;
    for(int i=0; i<nOx; i++)
