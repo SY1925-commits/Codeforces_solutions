@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   int n, a=0, d=0;
+   string s;
+   cin >> n;
+   cin >> s;
+   for(int i=0; i<(int)s.length(); i++) {
+      if(s[i] == 'A')
+         a++;
+      else
+         d++;
+   }
+   if(a>d)
+      cout << "Anton";
+   else if(a<d)
+      cout << "Danik";
+   else
+      cout << "Friendship";
+   
+   return 0;
+}
+
+//can we do this using hash-mapping?
