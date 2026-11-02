@@ -2,15 +2,14 @@
 using namespace std;
 
 int main() {
-   long long n, temp;
+   long long n;
    int comp, count=0;
    cin >> n;
-   temp = n;
-   while(temp!=0) {
-      comp = temp%10;
+   while(n!=0) {
+      comp = n%10;
       if(comp == 4 || comp == 7)
          count++;
-      temp/=10;
+      n/=10;
    }
    if(count == 4 || count == 7)
       cout << "YES";
