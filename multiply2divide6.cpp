@@ -21,12 +21,6 @@ int main() {
       }
       if(n>1)
          flag = 1;
-      for(auto e : f) {
-         if((e.first != 2) && (e.first != 3)) {
-            flag = 1;
-            break;
-         }
-      }
       if(flag == 1)
          cout << -1 << "\n";
       else {
